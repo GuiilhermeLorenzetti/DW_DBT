@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: dw_dbt
+    schema: public
+    tables: 
+      - name: commodities_data
+        description: "Commodities data"
+        columns:
+          - name: date
+            description: "Date of the data"
+          - name: Close
+            description: "Price of the commodity"
+          - name: symbol
+            description: "symbol of the commodity"
+      - name: trades
+        description: "trade data"
+        columns:
+          - name: date
+            description: "Date of the trade"
+          - name: symbol
+            description: "symbol of the trade"
+          - name: action
+            description: "action"
+          - name: quantity
+            description: "quantity of the trade"
+      - name: gold_result
+        description: "gold result"
+        columns:
+          - name: date
+            description: "Date of the gold result"
+          - name: symbol
+            description: "symbol of the gold result"
+          - name: close
+            description: "close of the gold result"
+          - name: action
+            description: "action of the gold result"
+          - name: quantity
+            description: "quantity of the gold result"
+
